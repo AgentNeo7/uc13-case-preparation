@@ -1,5 +1,5 @@
-__pycache__/
-*.pyc
-.venv/
-result.json
-report.json
+node_modules/
+.sf/
+.sfdx/
+metadataPackage_*/
+coverage/

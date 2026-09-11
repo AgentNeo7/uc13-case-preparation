@@ -1,0 +1,59 @@
+{
+  "id": "UC13",
+  "name": "Case Preparation",
+  "platform": "Salesforce",
+  "scope": "Bulk user-mode Case evidence packets with mandatory contact/description checks and source modification stamps.",
+  "status": "scoped_native_validated",
+  "publication": "scoped_source_preview_eligible",
+  "requirements": [
+    {
+      "id": "UC13-R01",
+      "acceptance": "Completeness means satisfying explicit requirements, not having a long summary.",
+      "coverage": "Native Case checklist covers Subject, Description and ContactId.",
+      "blocker": "Checklist not approved by actual process owner; no authority/freshness policy beyond current field source stamp."
+    },
+    {
+      "id": "UC13-R02",
+      "acceptance": "Each material fact cites its source and extraction uncertainty.",
+      "coverage": "User-mode Case extraction returns record URL and LastModifiedDate with scoped missing fields.",
+      "blocker": "Document/OCR extraction and uncertainty calibration not implemented."
+    },
+    {
+      "id": "UC13-R03",
+      "acceptance": "Conflicts are surfaced without fabricated resolution.",
+      "coverage": "Unavailable Case remains UNKNOWN; scoped missing values remain explicit.",
+      "blocker": "Conflicting source identities/dates, supersession and reconciliation not implemented."
+    },
+    {
+      "id": "UC13-R04",
+      "acceptance": "Consumers can distinguish established facts from proposals and unknowns.",
+      "coverage": "Flow invocable returns source reference, stamp, missing fields and scoped completeness state.",
+      "blocker": "Production Flow/Agentforce registration and permitted next-step authority pending."
+    },
+    {
+      "id": "UC13-R05",
+      "acceptance": "Reported benefit includes material omissions and downstream rework.",
+      "coverage": "Native tests specify source stamp, unknown Case and incomplete evidence controls.",
+      "blocker": "Reviewer correction UI, independent omission labels and measured effort comparison absent."
+    }
+  ],
+  "blockers": [
+    "Scoped metadata compilation and unit tests passed; broader integration, denied-user scenarios, actual domain policies and independent evaluation remain incomplete.",
+    "Original acceptance requirements remain partial; owner validation, comparative benchmarks and independent evidence pending."
+  ],
+  "native_tests": [
+    "CasePreparationActionTest"
+  ],
+  "commands": [
+    "npm test",
+    "sf project deploy start --dry-run --target-org eb1a-dev --manifest manifest/package.xml --test-level RunSpecifiedTests --tests CasePreparationActionTest"
+  ],
+  "full_acceptance_complete": false,
+  "native_validation": {
+    "status": "passed",
+    "mode": "dry-run",
+    "tests_completed": 3,
+    "persisted_deployment": false,
+    "scope": "one Developer org; scoped unit tests and supplied metadata only"
+  }
+}

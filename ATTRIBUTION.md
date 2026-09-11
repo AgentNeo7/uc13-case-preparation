@@ -1,5 +1,5 @@
 # Attribution
 
-This prototype, its synthetic fixtures and internal checks were AI-authored with Codex. Balaji Krishnan supplied the portfolio direction, independent-tool packaging choice and publication authorization. Ownership or Git history does not establish his sole personal authorship of the implementation.
+This Salesforce implementation and its original synthetic fixtures were AI-authored with Codex. Balaji Krishnan supplied portfolio direction, required Salesforce-specific architecture, authorized publication, and connected a Developer org for native validation. These are his recorded contributions; source ownership does not establish sole personal authorship. No customer, employer or private case materials are included.
 
-Upstream tools and documentation are credited in the source records and README. No third-party implementation is bundled, except original local benchmark code from the same AI-assisted project. Vendor names identify integration targets or baselines and do not imply endorsement. No private employer, customer, résumé or petition records are included.
+Salesforce and other vendor names identify platform targets. No endorsement, adoption, independent review or differentiated-method advantage is claimed. MIT covers original source; dependencies retain their licenses.
