@@ -1,0 +1,35 @@
+{
+  "id": "UC13",
+  "name": "CRM Case Preparation Kit",
+  "status": "bounded_local_prototype",
+  "scope": "Evidence completeness, freshness and contradiction checking",
+  "implemented_behavior": "Reconciles already-extracted scalar facts against explicit entity, date and source-authority requirements. Keeps provenance, rejects invalid supersession and lists conflicts or stale evidence without inventing a resolution.",
+  "blockers": [
+    "No PDF/OCR extraction, fuzzy entity matching, legal eligibility, approved financial/public-sector checklist, reviewer UI or comparative preparation study.",
+    "Original catalog G01\u2013G09 usable-release gates remain unverified. Independent evaluation, domain approval and maintenance owner acceptance absent."
+  ],
+  "source_urls": [
+    "https://docs.mulesoft.com/idp/"
+  ],
+  "research_decision": "Prior art overlaps. Implement a narrow useful local utility; no novelty or superiority claim.",
+  "gate_decision": "Local synthetic acceptance passed; original full capability and usable-release gates not passed.",
+  "checks": {
+    "command": "/opt/homebrew/bin/python3.13 test_tool.py -v",
+    "unit_test_count": 16,
+    "outcome": "passed",
+    "original_frozen_cases": 3,
+    "negative_exit_semantics": "0 completed analysis; 1 configured oracle mismatch; 2 invalid input; none proves safety",
+    "raw_log": "checks.json"
+  },
+  "evidence_class": "simulated",
+  "authorship": {
+    "implementation_and_fixtures": "AI-generated during authorized execution; internal AI checks only",
+    "Balaji_contributions": "Directed portfolio scope, local execution and publication policy. No implementation authorship or independent review attributed."
+  },
+  "license_status": "pending parent license application; original code, no third-party source copied",
+  "publication_policy": "eligible only for scoped prototype packaging after parent checks and license, not a full production release",
+  "next_task": "Process owner has not approved a domain checklist.",
+  "license": "MIT for original code; upstream documentation retains its own terms",
+  "source_publication": "Authorized experimental source preview; full catalog release gates not met",
+  "full_requirements_complete": false
+}

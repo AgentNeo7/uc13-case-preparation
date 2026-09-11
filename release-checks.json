@@ -1,0 +1,43 @@
+{
+  "checked_utc": "2026-09-11T06:47:13.925971+00:00",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_tool.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_cli_example_exit_zero (test_tool.ToolTests.test_cli_example_exit_zero) ... ok\ntest_configured_mismatch_exit_one (test_tool.ToolTests.test_configured_mismatch_exit_one) ... ok\ntest_deterministic_immutable (test_tool.ToolTests.test_deterministic_immutable) ... ok\ntest_empty_checklist_rejected (test_tool.ToolTests.test_empty_checklist_rejected) ... ok\ntest_frozen_oracles (test_tool.ToolTests.test_frozen_oracles) ... ok\ntest_malformed_exit_two (test_tool.ToolTests.test_malformed_exit_two) ... ok\ntest_missing_field_exit_two (test_tool.ToolTests.test_missing_field_exit_two) ... ok\ntest_negative (test_tool.ToolTests.test_negative) ... ok\ntest_null_required_fact_is_unknown (test_tool.ToolTests.test_null_required_fact_is_unknown) ... ok\ntest_other_entity_excluded (test_tool.ToolTests.test_other_entity_excluded) ... ok\ntest_oversize_exit_two (test_tool.ToolTests.test_oversize_exit_two) ... ok\ntest_positive (test_tool.ToolTests.test_positive) ... ok\ntest_stale_fact_not_established (test_tool.ToolTests.test_stale_fact_not_established) ... ok\ntest_supersession_requires_explicit_provenance (test_tool.ToolTests.test_supersession_requires_explicit_provenance) ... ok\ntest_unknown (test_tool.ToolTests.test_unknown) ... ok\ntest_unknown_fields_exit_two (test_tool.ToolTests.test_unknown_fields_exit_two) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.202s\n\nOK\n",
+      "seconds": 0.2774706670315936
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-I",
+        "tool.py",
+        "--input",
+        "examples/input.json",
+        "--output",
+        "isolated-result.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.02956020797137171
+    }
+  ],
+  "test_count": 16,
+  "example_passed": true,
+  "source_sha256": "f10ac2ba558810a306ea1636cec57f23f46eb846b90dcea80fede7ed7ae0b3a6",
+  "scope": "Standalone local prototype on original synthetic cases; not full catalog acceptance"
+}

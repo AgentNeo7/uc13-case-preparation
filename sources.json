@@ -1,0 +1,10 @@
+[
+  {
+    "title": "MuleSoft IDP overview",
+    "url": "https://docs.mulesoft.com/idp/",
+    "accessed": "2026-09-11",
+    "evidence_class": "externally_reported",
+    "note": "MuleSoft documents structured document extraction and human review. Local declared-fact reconciliation does not establish extraction quality or superiority to IDP.",
+    "performance_verified": false
+  }
+]

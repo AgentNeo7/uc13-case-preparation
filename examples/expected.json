@@ -1,0 +1,14 @@
+{
+  "conflicts": [],
+  "established": [
+    {
+      "evidence_ids": [
+        "f1"
+      ],
+      "field": "identity",
+      "value": "verified"
+    }
+  ],
+  "missing": [],
+  "status": "complete_within_declared_checklist"
+}

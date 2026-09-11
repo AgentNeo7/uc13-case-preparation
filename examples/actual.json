@@ -1,0 +1,24 @@
+{
+  "analysis_completed": true,
+  "conflicts": [],
+  "established": [
+    {
+      "evidence_ids": [
+        "f1"
+      ],
+      "field": "identity",
+      "value": "verified"
+    }
+  ],
+  "evidence_class": "simulated",
+  "excluded_entity_ids": [],
+  "missing": [],
+  "sources": {
+    "f1": "synthetic:doc#p1"
+  },
+  "stale_evidence_ids": [],
+  "status": "complete_within_declared_checklist",
+  "superseded_ids": [],
+  "unapproved_authority_ids": [],
+  "unknown_value_ids": []
+}

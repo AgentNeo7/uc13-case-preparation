@@ -1,0 +1,125 @@
+[
+  {
+    "expected": {
+      "conflicts": [],
+      "established": [
+        {
+          "evidence_ids": [
+            "f1"
+          ],
+          "field": "identity",
+          "value": "verified"
+        }
+      ],
+      "missing": [],
+      "status": "complete_within_declared_checklist"
+    },
+    "input": {
+      "data": {
+        "as_of": "2026-09-11",
+        "entity": "case-1",
+        "facts": [
+          {
+            "authority": "registry",
+            "date": "2026-09-10",
+            "entity": "case-1",
+            "field": "identity",
+            "id": "f1",
+            "source": "synthetic:doc#p1",
+            "supersedes": [],
+            "value": "verified"
+          }
+        ],
+        "requirements": [
+          {
+            "authorities": [
+              "registry"
+            ],
+            "field": "identity",
+            "max_age_days": 30
+          }
+        ]
+      },
+      "evidence_class": "simulated",
+      "spec_version": 1
+    },
+    "name": "positive"
+  },
+  {
+    "expected": {
+      "conflicts": [
+        "identity"
+      ],
+      "established": [],
+      "status": "incomplete"
+    },
+    "input": {
+      "data": {
+        "as_of": "2026-09-11",
+        "entity": "case-1",
+        "facts": [
+          {
+            "authority": "registry",
+            "date": "2026-09-10",
+            "entity": "case-1",
+            "field": "identity",
+            "id": "f1",
+            "source": "synthetic:doc#p1",
+            "supersedes": [],
+            "value": "verified"
+          },
+          {
+            "authority": "registry",
+            "date": "2026-09-10",
+            "entity": "case-1",
+            "field": "identity",
+            "id": "f2",
+            "source": "synthetic:doc2#p1",
+            "supersedes": [],
+            "value": "disputed"
+          }
+        ],
+        "requirements": [
+          {
+            "authorities": [
+              "registry"
+            ],
+            "field": "identity",
+            "max_age_days": 30
+          }
+        ]
+      },
+      "evidence_class": "simulated",
+      "spec_version": 1
+    },
+    "name": "negative"
+  },
+  {
+    "expected": {
+      "established": [],
+      "missing": [
+        "identity"
+      ],
+      "status": "incomplete"
+    },
+    "input": {
+      "data": {
+        "as_of": "2026-09-11",
+        "entity": "case-1",
+        "facts": [],
+        "requirements": [
+          {
+            "authorities": [
+              "registry"
+            ],
+            "field": "identity",
+            "max_age_days": 30
+          }
+        ]
+      },
+      "evidence_class": "simulated",
+      "spec_version": 1
+    },
+    "name": "unknown"
+  }
+]
